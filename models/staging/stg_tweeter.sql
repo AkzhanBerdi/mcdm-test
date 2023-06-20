@@ -26,7 +26,7 @@ select
         spend, 
         0 as total_conversions, 
         video_total_views as video_views
-from {{ source('staging',"src_promoted_tweets_twitter_all_data") }}
+from dbt_akzhanberdi.src_promoted_tweets_twitter_all_data
 )
 
 select * from tweeter

@@ -26,7 +26,7 @@ select
         spend, 
         conv as total_conversions, 
         0 as video_views
-from {{ source('staging','src_ads_bing_all_data') }}
+from dbt_akzhanberdi.src_ads_bing_all_data
 
 )
 

@@ -26,7 +26,7 @@ select
         spend, 
         conversions as total_conversions, 
         video_views
-from {{ source('staging','src_ads_tiktok_ads_all_data') }}
+from dbt_akzhanberdi.src_ads_tiktok_ads_all_data
 )
 
 select * from tiktok
