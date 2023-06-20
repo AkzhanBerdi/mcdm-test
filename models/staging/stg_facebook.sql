@@ -25,7 +25,7 @@ select
         spend, 
         0 as total_conversions,
         views + views_2 as video_views
-from {{ source('staging','src_ads_creative_facebook_all_data') }}
+from dbt_akzhanberdi.src_ads_creative_facebook_all_data
 )
 
 select * from facebook
