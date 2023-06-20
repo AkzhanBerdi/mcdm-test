@@ -10,7 +10,7 @@ select
         comments + comments_2 as comments, 
         creative_id, 
         date, 
-        likes as engagements,
+        views as engagements,
         impressions, 
         mobile_app_install as installs, 
         likes,
