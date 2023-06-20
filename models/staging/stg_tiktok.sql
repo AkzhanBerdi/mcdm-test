@@ -1,4 +1,4 @@
--- with tiktok as(
+with tiktok as(
 
 select 
         ad_id, 
@@ -27,6 +27,6 @@ select
         conversions as total_conversions, 
         video_views
 from {{ source('staging','src_ads_tiktok_ads_all_data') }}
--- )
+)
 
--- select * from tiktok
+select * from tiktok

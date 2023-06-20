@@ -27,6 +27,7 @@ select
         conv as total_conversions, 
         0 as video_views
 from {{ source('staging','src_ads_bing_all_data') }}
+
 )
 
 select * from bing
