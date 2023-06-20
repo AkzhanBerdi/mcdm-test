@@ -36,4 +36,4 @@ models:
     staging:
       +materialized: table
     finals:
-      +materialized: view
+      +materialized: table
