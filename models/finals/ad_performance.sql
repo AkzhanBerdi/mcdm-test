@@ -1,7 +1,7 @@
 select * from {{ ref("stg_bing")}}
-union all
+union distinct
 select * from {{ ref("stg_facebook")}}
-union all
+union distinct
 select * from {{ ref("stg_tiktok")}}
-union all
+union distinct
 select * from {{ ref("stg_tweeter")}}
