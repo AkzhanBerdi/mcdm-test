@@ -6,11 +6,11 @@ select
         0 as adset_id, 
         campaign_id, 
         channel, 
-        clicks + clicks_2 as clicks,
+        clicks as clicks,
         comments + comments_2 as comments, 
         creative_id, 
         date, 
-        views as engagements,
+        (likes + shares + comments + views + views_2 + clicks + clicks_2) / 2 as engagements,
         impressions, 
         mobile_app_install as installs, 
         likes,
@@ -23,7 +23,7 @@ select
         0 as revenue, 
         shares + shares_2 as shares, 
         spend, 
-        0 as total_conversions,
+        (purchase + purchase_2) / 2 as total_conversions,
         views + views_2 as video_views
 from dbt_akzhanberdi.src_ads_creative_facebook_all_data
 )
